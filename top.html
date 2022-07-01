@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Links | espace</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" id="style">
+    <!-- fonts -->
+    <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- ヘッダー -->
+<header>
+    <h1><a href="top.html">中学・学習サイト</a></h1>
+    <nav id="mainMenu" class="menu">
+        <ul>
+            <li><a href="#MENU_1">目的</a></li>
+            <li><a href="#MENU_2">国数英理社</a></li>
+        </ul>
+    </nav>
+</header>
+<button data-target="mainMenu" class="manu-toggler" data-open="false"></button>
+
+<!-- メイン -->
+<main>
+    <article id="MENU_1">
+        <h2>目的</h2>
+        
+        <h3>学習サイト</h3>
+        <div>
+            <p>
+                このテンプレートの詳細については、<a href="https://espace.monbalcon.net/"
+                    target="_bleak">eapace</a>のテンプレートサンプル内に「ドキュメント」を設置しております。<br>
+                各装飾、アコーディオンなどの使い方について詳細を記載しておりますので、サイト作成の参考にご覧ください。
+            </p>
+        </div>
+
+
+    
+    <article id="MENU_2">
+        <h2>単元一覧</h2>
+
+        <main1>
+            <div id="ytnMokuji">    
+                <ul><li><span class="liY1">国語</span><span><a href="file:///C:/Users/wingm/Desktop/japanese.php" target="_blank" rel="nofollow">国語の単元一覧</a><a href="file:///C:/Users/wingm/Desktop/japanese_study.php" target="_blank" rel="nofollow">国語の勉強法</a></span></li><li><span class="liY1">数学</span><span><a href="file:///C:/Users/wingm/Desktop/study_A08/math.html" target="_blank" rel="nofollow">数学の単元一覧</a> <a href="file:///C:/Users/wingm/Desktop/math_study.php" target="_blank" rel="nofollow">数学の勉強法</a></span></li><li><span class="liY1">英語</span><span><a href="file:///C:/Users/wingm/Desktop/english.php" target="_blank" rel="nofollow">英語の単元一覧</a> <a href="file:///C:/Users/wingm/Desktop/english_study.php" target="_blank" rel="nofollow">英語の勉強法</a></span></li><li><span class="liY1">理科</span><span><a href="file:///C:/Users/wingm/Desktop/study_A08/science.html" target="_blank" rel="nofollow">理科の単元一覧</a> <a href="file:///C:/Users/wingm/Desktop/science_study.php" target="_blank" rel="nofollow">理科の勉強法</a></span></li><li><span class="liY1">社会</span><span><a href="file:///C:/Users/wingm/Desktop/social.php" target="_blank" rel="nofollow">社会の単元一覧</a> <a href="file:///C:/Users/wingm/Desktop/social_study.php" target="_blank" rel="nofollow">社会の勉強法</a></span></li></ul>
+            </div>
+        </main1>
+
+
+        <h3>参考リンク集</h3>
+        <div>
+            <ul>
+                <li><a href="https://okedou.app/">okedou</a></li>
+                <li><a href="https://math.005net.com/">中学学習サイト</a></li>
+                <li><a href="https://espace.monbalcon.net/">Template by espace</a></li>
+                <li><a href="システム工学演習レポート課題2_A08.pdf" download="システム工学演習レポート課題2_A08.pdf">8班 最終資料</a></li>
+            </ul>
+        </div>
+    </article>
+</main>
+
+<!-- フッター -->
+<footer>
+    <div class="text-small">
+        <a href="https://espace.monbalcon.net/" target="_bleak">Template by espace.</a>
+    </div>
+    <nav id="pageBottomNav" class="fixed-menu">
+        <ul>
+            <li id="pageTop" class="pagetop"><button></button></li>
+        </ul>
+    </nav>
+</footer>
+
+<!-- script -->
+<script src="js/general.js"></script>
+<!-- script -->
+<script src="js/general.js"></script>
+</body>
+</html>
+<style>
+#ytnMokuji ul:nth-of-type(1)::before{content:'国数英理社'}   
+#ytnMokuji ul{display:blockwidth:auto;padding:0;list-style:none;text-align:center;}
+#ytnMokuji ul::before {background: linear-gradient(#60c5ba,#45c5ba);border-bottom: none;color: #ffffff;font-size: large;text-shadow: 0 0 5px #000;line-height: 1.8;padding-left: 0.8em;display: block;}
+#ytnMokuji li{vertical-align:top;text-align:left;}
+#ytnMokuji .liY1{display:block;background: #858585;color:beige;}
+#ytnMokuji a::before, #ytnMokuji a::after{background-color: #88ffc3;content: '';width: 6px;height: 2px;display: inline-block;position: absolute;border-radius: 2px;}
+#ytnMokuji a::before{transform: rotate(45deg) translate(0, -2px);}
+#ytnMokuji a::after{transform: rotate(-45deg) translate(0, 2px);}
+@media screen and (max-width:767px){
+     #ytnMokuji ul{margin:0;}
+    #ytnMokuji li{display:block;width:auto;margin:0;}
+    #ytnMokuji li:first-of-type{margin-top:0;}
+    #ytnMokuji li span:last-of-type{opacity:0;transition:all 0.5s;transform:scale(0,0);display:none;margin:0;}
+    #ytnMokuji li span.opn:last-of-type{opacity:1;transform: scale(1,1);display:block;margin:10px 0;}
+    #ytnMokuji .liY1{padding:10px 0 10px 90px;margin:0 0 1px 0;height:16px;}
+    #ytnMokuji a{font-size:90%;display:inline-block;padding:8px 2px 8px 15px;}
+    #ytnMokuji a::before, #ytnMokuji a::after{left: 7px;top: 50%;}    
+    #ytnMokuji span.liY1::after {
+    content: "▼";background-color: #acacac;display: inline-block;transform: rotate(0deg);position: absolute;top: 10px;left: 50px;font-size: 8px;line-height: 1;transition: all 0.5s;padding: 3px;color: rgb(177, 47, 47);border-radius: 50%;letter-spacing: 0;text-align: center;
+    }
+    #ytnMokuji span.liY1.opn::after{
+        transform: rotate(540deg);
+    }    
+}
+@media screen and (min-width:767px){
+    #ytnMokuji li{display:inline-block;width:20%;}
+    #ytnMokuji .liY1{text-align: center;padding:5px 0;margin-bottom:5px}
+    #ytnMokuji a{font-size:80%;display:block;padding:7px 2px 7px 12px;min-height:2.1em;}
+    #ytnMokuji a::before, #ytnMokuji a::after{left: 0px;top: 42%;}    
+}    
+</style>    
+<style type="text/css" media="print">
+    #ytnMokuji li{display:inline-block;width:20%;}
+    #ytnMokuji .liY1{text-align: center;padding:5px 0;margin-bottom:5px}
+    #ytnMokuji a{font-size:80%;display:block;padding:7px 2px 7px 12px;min-height:2.1em;}
+    #ytnMokuji a::before, #ytnMokuji a::after{left: 0px;top: 42%;}    
+</style>
+</body>
+</html>
